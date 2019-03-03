@@ -1,6 +1,6 @@
 {
   "name": "slim-down",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Clean and remove unnecessary files and folders from node_modules",
   "main": "index.js",
   "scripts": {
