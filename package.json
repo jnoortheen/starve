@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\""
   },
   "bin": {
-    "slim-down": "./slim-down.sh"
+    "slim-down-2": "./slim-down.sh"
   },
   "repository": {
     "type": "git",
