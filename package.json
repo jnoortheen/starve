@@ -6,13 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
+  "bin": {
+    "slim-down": "./slim-down.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/93v/slim-down.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "slim down",
+    "prune",
+    "clean up",
+    "node_modules",
+    "node prune",
+    "node clean",
+    "autoclean"
+  ],
+  "author": "93v <93v@protonmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/93v/slim-down/issues"
   },
