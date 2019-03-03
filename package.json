@@ -1,5 +1,5 @@
 {
-  "name": "slim-down-2",
+  "name": "starve",
   "version": "0.0.3",
   "description": "Clean and remove unnecessary files and folders from node_modules",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\""
   },
   "bin": {
-    "slim-down-2": "./slim-down.sh"
+    "starve": "./slim-down.sh"
   },
   "repository": {
     "type": "git",
