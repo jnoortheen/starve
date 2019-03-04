@@ -1,20 +1,21 @@
 {
   "name": "starve",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Clean and remove unnecessary files and folders from node_modules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
   "bin": {
-    "starve": "./slim-down.sh"
+    "starve": "./starve.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/93v/slim-down.git"
+    "url": "git+https://github.com/93v/starve.git"
   },
   "keywords": [
     "slim down",
+    "starve",
     "prune",
     "clean up",
     "node_modules",
@@ -25,7 +26,7 @@
   "author": "93v <93v@protonmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/93v/slim-down/issues"
+    "url": "https://github.com/93v/starve/issues"
   },
-  "homepage": "https://github.com/93v/slim-down#readme"
+  "homepage": "https://github.com/93v/starve#readme"
 }

@@ -1,4 +1,4 @@
-# slim-down
+# Starve
 
 Clean and remove unnecessary files and folders from node_modules
 
@@ -8,5 +8,11 @@ Clean and remove unnecessary files and folders from node_modules
 
 ## What
 
-`slim-down` is a very simple tool to remove unnecessary files and folders
+`starve` is a very simple tool to remove unnecessary files and folders
 from `node_modules`, such as markdown, typescript source files, licenses etc.
+
+## Using
+
+```bash
+npx starve
+```
