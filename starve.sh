@@ -11,7 +11,9 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -iname AUTHORS -or \
     -iname CHANGELOG -or \
     -iname CHANGELOG.md -or \
+    -iname CHANGES -or \
     -iname CODEOWNERS -or \
+    -iname CONTRIBUTING -or \
     -iname CONTRIBUTORS -or \
     -iname Gruntfile.js -or \
     -iname Gulpfile.js -or \
@@ -49,6 +51,9 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .appveyor.yml -or \
     -name .babelrc -or \
     -name .coveralls.yml -or \
+    -name .dir-locals.el -or \
+    -name .dockerignore -or \
+    -name .doclets.yml -or \
     -name .documentup.json -or \
     -name .editorconfig -or \
     -name .eslintignore -or \
@@ -58,6 +63,7 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .eslintrc.yml -or \
     -name .flowconfig -or \
     -name .gitattributes -or \
+    -name .gitignore -or \
     -name .gitlab-ci.yml -or \
     -name .gitmodules -or \
     -name .htmllintrc -or \
@@ -66,6 +72,7 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .lint -or \
     -name .npmignore -or \
     -name .npmrc -or \
+    -name .nvmrc -or \
     -name .prettierrc -or \
     -name .prettierrc.js -or \
     -name .prettierrc.json -or \
@@ -83,6 +90,9 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .yarn-metadata.json -or \
     -name .yarnclean -or \
     -name .yo-rc.json -or \
+    -name .zuul.yml -or \
+    -name "*~" -or \
+    -name "*.1" -or \
     -name "*.a.d" -or \
     -name "*.c" -or \
     -name "*.cc" -or \
@@ -110,8 +120,8 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name "*.py" -or \
     -name "*.pyc" -or \
     -name "*.rb" -or \
-    -name "*.s" -or \
     -name "*.S" -or \
+    -name "*.s" -or \
     -name "*.sln" -or \
     -name "*.swp" -or \
     -name "*.target.mk" -or \
@@ -128,7 +138,6 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name benchmarks -or \
     -name builderror.log -or \
     -name Cakefile -or \
-    -name CHANGES -or \
     -name circle.yml -or \
     -name coverage -or \
     -name desktop.ini -or \
@@ -142,6 +151,7 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name htmllint.js -or \
     -name Jenkinsfile -or \
     -name jest.config.js -or \
+    -name jsdoc.json -or \
     -name jsl.node.conf -or \
     -name karma.conf.js -or \
     -name node-gyp -or \
