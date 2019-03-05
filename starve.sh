@@ -83,6 +83,42 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .yarn-metadata.json -or \
     -name .yarnclean -or \
     -name .yo-rc.json -or \
+    -name appveyor.yml -or \
+    -name AUTHORS -or \
+    -name benchmarks -or \
+    -name builderror.log -or \
+    -name Cakefile -or \
+    -name CHANGES -or \
+    -name circle.yml -or \
+    -name coverage -or \
+    -name desktop.ini -or \
+    -name docs -or \
+    -name eslint -or \
+    -name example -or \
+    -name example.js -or \
+    -name examples -or \
+    -name Gruntfile.js -or \
+    -name gyp -or \
+    -name htmllint.js -or \
+    -name Jenkinsfile -or \
+    -name jest.config.js -or \
+    -name jsl.node.conf -or \
+    -name karma.conf.js -or \
+    -name node-gyp -or \
+    -name node-pre-gyp -or \
+    -name npm-debug.log -or \
+    -name prettier.config.js -or \
+    -name robot.html -or \
+    -name screenshots -or \
+    -name stylelint.config.js -or \
+    -name tests -or \
+    -name thumbs.db -or \
+    -name tsconfig.json -or \
+    -name tslint.json -or \
+    -name usage.txt -or \
+    -name Vagrantfile -or \
+    -name wallaby.conf.js -or \
+    -name wallaby.js -or \
     \( -name '*.ts' -and \! -name '*.d.ts' \) \
   \) -print0 \; | xargs -0 rm -rf
 
