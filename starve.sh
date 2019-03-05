@@ -83,6 +83,46 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .yarn-metadata.json -or \
     -name .yarnclean -or \
     -name .yo-rc.json -or \
+    -name "*.a.d" -or \
+    -name "*.c" -or \
+    -name "*.cc" -or \
+    -name "*.coffee" -or \
+    -name "*.cpp" -or \
+    -name "*.dntrc" -or \
+    -name "*.exp" -or \
+    -name "*.gyp" -or \
+    -name "*.gypi" -or \
+    -name "*.h" -or \
+    -name "*.jpg" -or \
+    -name "*.jst" -or \
+    -name "*.lib" -or \
+    -name "*.Makefile" -or \
+    -name "*.markdown" -or \
+    -name "*.md" -or \
+    -name "*.mkd" -or \
+    -name "*.node.mk" -or \
+    -name "*.o.d" -or \
+    -name "*.obj" -or \
+    -name "*.patch" -or \
+    -name "*.pdb" -or \
+    -name "*.pl" -or \
+    -name "*.png" -or \
+    -name "*.py" -or \
+    -name "*.pyc" -or \
+    -name "*.rb" -or \
+    -name "*.s" -or \
+    -name "*.S" -or \
+    -name "*.sln" -or \
+    -name "*.swp" -or \
+    -name "*.target.mk" -or \
+    -name "*.tgz" -or \
+    -name "*.tlog" -or \
+    -name "*.txt" -or \
+    -name "*.vcxproj.filters" -or \
+    -name "*.vcxproj" -or \
+    -name "*benchmark*" -or \
+    -name "*LICENCE*" -or \
+    -name "*LICENSE*" -or \
     -name appveyor.yml -or \
     -name AUTHORS -or \
     -name benchmarks -or \
