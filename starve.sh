@@ -39,6 +39,25 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
 
 # Common unneeded directories
 find . -type d -name node_modules -prune -exec find {} -type d \( \
+    -name __tests__ -or \
+    -name .circleci -or \
+    -name .github -or \
+    -name .idea -or \
+    -name .nyc_output -or \
+    -name .vscode -or \
+    -name assets -or \
+    -name coverage -or \
+    -name doc -or \
+    -name docs -or \
+    -name example -or \
+    -name examples -or \
+    -name gyp -or \
+    -name images -or \
+    -name node-gyp -or \
+    -name node-pre-gyp -or \
+    -name powered-test -or \
+    -name test -or \
+    -name tests -or \
     -name website \
   \) -print0 \; | xargs -0 rm -rf
 
