@@ -21,15 +21,13 @@
     "node_modules",
     "node prune",
     "node clean",
-    "autoclean"
+    "autoclean",
+    "starvation"
   ],
   "author": "93v <93v@protonmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/93v/starve/issues"
   },
-  "homepage": "https://github.com/93v/starve#readme",
-  "devDependencies": {
-    "eslint": "^5.15.0"
-  }
+  "homepage": "https://github.com/93v/starve#readme"
 }
