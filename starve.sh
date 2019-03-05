@@ -20,7 +20,9 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -iname LICENCE-MIT -or \
     -iname LICENCE-MIT.txt -or \
     -iname LICENCE.BSD -or \
+    -iname LICENCE.markdown -or \
     -iname LICENCE.md -or \
+    -iname LICENCE.mkd -or \
     -iname LICENCE.txt -or \
     -iname LICENSE -or \
     -iname LICENSE-BSD -or \
@@ -28,12 +30,16 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -iname LICENSE-MIT -or \
     -iname LICENSE-MIT.txt -or \
     -iname LICENSE.BSD -or \
+    -iname LICENSE.markdown -or \
     -iname LICENSE.md -or \
+    -iname LICENSE.mkd -or \
     -iname LICENSE.txt -or \
     -iname Makefile -or \
     -iname NOTICE.txt -or \
     -iname README -or \
+    -iname README.markdown -or \
     -iname README.md -or \
+    -iname README.mkd -or \
     \( -name '*.ts' -and \! -name '*.d.ts' \) \
   \) -print0 \; | xargs -0 rm -rf
 
