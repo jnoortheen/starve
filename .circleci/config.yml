@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: debian:stretch
+    - image: circleci/node:11
 
 jobs:
   build:
@@ -20,7 +20,6 @@ jobs:
       #       - v1-dependencies-
 
       # - run: npm install
-      - run: echo Build
 
       # - save_cache:
       #     paths:
@@ -28,6 +27,7 @@ jobs:
       #     key: v1-dependencies-{{ checksum "package.json" }}
 
       # - run: npm test
+      - run: echo Build
 
       - persist_to_workspace:
           root: ~/repo
