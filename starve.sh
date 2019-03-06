@@ -52,6 +52,7 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .babelrc -or \
     -name .coveralls.yml -or \
     -name .dir-locals.el -or \
+    -name .dntrc -or \
     -name .dockerignore -or \
     -name .doclets.yml -or \
     -name .documentup.json -or \
@@ -61,15 +62,24 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .eslintrc.js -or \
     -name .eslintrc.json -or \
     -name .eslintrc.yml -or \
+    -name .eslinttignore -or \
     -name .flowconfig -or \
     -name .gitattributes -or \
     -name .gitignore -or \
+    -name .gitkeep -or \
     -name .gitlab-ci.yml -or \
     -name .gitmodules -or \
+    -name .gradle -or \
     -name .htmllintrc -or \
+    -name .istanbul.yml -or \
+    -name .jamignore -or \
+    -name .jsbeautifyrc -or \
     -name .jscs.json -or \
+    -name .jscsrc -or \
+    -name .jshintignore -or \
     -name .jshintrc -or \
     -name .lint -or \
+    -name .lintignore -or \
     -name .npmignore -or \
     -name .npmrc -or \
     -name .nvmrc -or \
@@ -86,40 +96,60 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .tern-port -or \
     -name .tern-project -or \
     -name .travis.yml -or \
+    -name .vimrc -or \
     -name .yarn-integrity -or \
     -name .yarn-metadata.json -or \
     -name .yarnclean -or \
     -name .yo-rc.json -or \
     -name .zuul.yml -or \
-    -name "*~" -or \
     -name "*.1" -or \
     -name "*.a.d" -or \
+    -name "*.bat" -or \
     -name "*.c" -or \
     -name "*.cc" -or \
+    -name "*.cmd" -or \
     -name "*.coffee" -or \
     -name "*.cpp" -or \
+    -name "*.csproj" -or \
+    -name "*.css" -or \
     -name "*.dntrc" -or \
+    -name "*.eot" -or \
     -name "*.exp" -or \
+    -name "*.gif" -or \
+    -name "*.gnu" -or \
     -name "*.gyp" -or \
     -name "*.gypi" -or \
     -name "*.h" -or \
+    -name "*.html" -or \
+    -name "*.http" -or \
+    -name "*.ico" -or \
+    -name "*.jar" -or \
     -name "*.jpg" -or \
+    -name "*.js.gz" -or \
+    -name "*.js.map" -or \
+    -name "*.json~" -or \
     -name "*.jst" -or \
     -name "*.lib" -or \
+    -name "*.log" -or \
     -name "*.Makefile" -or \
+    -name "*.map" -or \
     -name "*.markdown" -or \
     -name "*.md" -or \
     -name "*.mkd" -or \
     -name "*.node.mk" -or \
+    -name "*.nuspec" -or \
     -name "*.o.d" -or \
     -name "*.obj" -or \
+    -name "*.orig" -or \
     -name "*.patch" -or \
     -name "*.pdb" -or \
     -name "*.pl" -or \
     -name "*.png" -or \
+    -name "*.ps1" -or \
     -name "*.py" -or \
     -name "*.pyc" -or \
     -name "*.rb" -or \
+    -name "*.rej" -or \
     -name "*.S" -or \
     -name "*.s" -or \
     -name "*.sln" -or \
@@ -127,18 +157,27 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name "*.target.mk" -or \
     -name "*.tgz" -or \
     -name "*.tlog" -or \
+    -name "*.todo" -or \
+    -name "*.ttf" -or \
     -name "*.txt" -or \
     -name "*.vcxproj.filters" -or \
     -name "*.vcxproj" -or \
+    -name "*.watchr" -or \
+    -name "*.woff" -or \
+    -name "*~" -or \
     -name "*benchmark*" -or \
     -name "*LICENCE*" -or \
     -name "*LICENSE*" -or \
     -name appveyor.yml -or \
     -name AUTHORS -or \
     -name benchmarks -or \
+    -name binding.gyp -or \
+    -name bower.json -or \
     -name builderror.log -or \
     -name Cakefile -or \
     -name circle.yml -or \
+    -name component.json -or \
+    -name composer.json -or \
     -name coverage -or \
     -name desktop.ini -or \
     -name docs -or \
@@ -146,18 +185,24 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name example -or \
     -name example.js -or \
     -name examples -or \
+    -name gemfile -or \
     -name Gruntfile.js -or \
     -name gyp -or \
+    -name history.markdown -or \
+    -name history.md -or \
     -name htmllint.js -or \
     -name Jenkinsfile -or \
     -name jest.config.js -or \
     -name jsdoc.json -or \
+    -name jsl.conf -or \
     -name jsl.node.conf -or \
     -name karma.conf.js -or \
     -name node-gyp -or \
     -name node-pre-gyp -or \
     -name npm-debug.log -or \
+    -name package-lock.json -or \
     -name prettier.config.js -or \
+    -name rakefile -or \
     -name robot.html -or \
     -name screenshots -or \
     -name stylelint.config.js -or \
@@ -169,6 +214,8 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name Vagrantfile -or \
     -name wallaby.conf.js -or \
     -name wallaby.js -or \
+    -name wercker.yml -or \
+    -name yarn.lock -or \
     \( -name '*.ts' -and \! -name '*.d.ts' \) \
   \) -print0 \; | xargs -0 rm -rf
 
@@ -184,6 +231,11 @@ find . -type d -name node_modules -prune -exec find {} -type d \( \
     -name coverage -or \
     -name doc -or \
     -name docs -or \
+    -name draft-00 -or \
+    -name draft-01 -or \
+    -name draft-02 -or \
+    -name draft-03 -or \
+    -name draft-04 -or \
     -name example -or \
     -name examples -or \
     -name gyp -or \
@@ -191,6 +243,7 @@ find . -type d -name node_modules -prune -exec find {} -type d \( \
     -name node-gyp -or \
     -name node-pre-gyp -or \
     -name powered-test -or \
+    -name samples -or \
     -name test -or \
     -name tests -or \
     -name website \
