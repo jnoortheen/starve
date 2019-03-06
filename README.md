@@ -8,7 +8,7 @@ Clean and remove unnecessary files and folders from `node_modules`
 
 The industry is moving towards serverless architecure, where the size of your
 package is very important for performance. This tool makes your lambda
-functions' packages significantly smaller
+functions' packages significantly smaller.
 
 ## What
 
