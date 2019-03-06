@@ -1,6 +1,6 @@
 # Starve
 
-Clean and remove unnecessary files and folders from node_modules
+Clean and remove unnecessary files and folders from `node_modules`
 
 ## Why
 
