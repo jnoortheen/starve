@@ -183,7 +183,6 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name docs -or \
     -name eslint -or \
     -name example -or \
-    -name example.js -or \
     -name examples -or \
     -name gemfile -or \
     -name Gruntfile.js -or \
