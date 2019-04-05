@@ -1,6 +1,16 @@
 # Starve
 
 ![Travis (.com)](https://img.shields.io/travis/com/93v/starve.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/93v/starve.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/93v/starve.svg)
+![npm](https://img.shields.io/npm/dw/starve.svg)
+![npm](https://img.shields.io/npm/dm/starve.svg)
+![npm](https://img.shields.io/npm/dy/starve.svg)
+![npm](https://img.shields.io/npm/dt/starve.svg)
+![NPM](https://img.shields.io/npm/l/starve.svg)
+![npm](https://img.shields.io/npm/v/starve.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/93v/starve.svg)
+![npm collaborators](https://img.shields.io/npm/collaborators/starve.svg)
 
 Clean and remove unnecessary files and folders from `node_modules`
 
