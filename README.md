@@ -1,5 +1,7 @@
 # Starve
 
+![Travis (.com)](https://img.shields.io/travis/com/93v/starve.svg)
+
 Clean and remove unnecessary files and folders from `node_modules`
 
 ## Why
