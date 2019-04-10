@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "postversion": "echo \"POST\""
+    "postversion": "tag=$(git tag --points-at HEAD) && echo $tag"
   },
   "bin": {
     "starve": "./starve.sh"
