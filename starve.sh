@@ -208,6 +208,7 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name tests -or \
     -name thumbs.db -or \
     -name tsconfig.json -or \
+    -name tsconfig.tsbuildinfo -or \
     -name tslint.json -or \
     -name usage.txt -or \
     -name Vagrantfile -or \
