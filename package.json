@@ -1,6 +1,6 @@
 {
   "name": "starve",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "description": "Clean and remove unnecessary files and folders from node_modules",
   "main": "index.js",
   "scripts": {
