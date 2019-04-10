@@ -249,6 +249,9 @@ find . -type d -name node_modules -prune -exec find {} -type d \( \
     -name website \
   \) -print0 \; | xargs -0 rm -rf
 
+# Empty folders
+find node_modules -type d -empty -delete
+
 echo ""
 echo "After starvation: "$(du -hs .)
 echo "Files count: "$(find node_modules/ -type f | wc -l)
