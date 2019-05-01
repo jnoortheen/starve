@@ -1,9 +1,9 @@
-version: 2
-
 defaults: &defaults
   working_directory: ~/repo
   docker:
     - image: circleci/node
+
+version: 2
 
 jobs:
   publish:
