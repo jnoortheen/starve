@@ -104,67 +104,106 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name .zuul.yml -or \
     -name "*.1" -or \
     -name "*.a.d" -or \
+    -name "*.all-contributorsrc" -or \
+    -name "*.bak" -or \
     -name "*.bat" -or \
+    -name "*.bazel" -or \
+    -name "*.bnf" -or \
     -name "*.c" -or \
     -name "*.cc" -or \
+    -name "*.clj" -or \
+    -name "*.cljs" -or \
     -name "*.cmd" -or \
     -name "*.coffee" -or \
     -name "*.cpp" -or \
+    -name "*.cs" -or \
     -name "*.csproj" -or \
     -name "*.css" -or \
     -name "*.dntrc" -or \
     -name "*.eot" -or \
+    -name "*.eslintignore" -or \
+    -name "*.eslintirgnore" -or \
     -name "*.exp" -or \
+    -name "*.fish" -or \
+    -name "*.fs" -or \
+    -name "*.fsproj" -or \
     -name "*.gif" -or \
     -name "*.gnu" -or \
+    -name "*.go" -or \
+    -name "*.gradle" -or \
+    -name "*.groovy" -or \
     -name "*.gyp" -or \
     -name "*.gypi" -or \
     -name "*.h" -or \
     -name "*.html" -or \
     -name "*.http" -or \
+    -name "*.icns" -or \
     -name "*.ico" -or \
     -name "*.jar" -or \
+    -name "*.java" -or \
     -name "*.jpg" -or \
     -name "*.js.gz" -or \
     -name "*.js.map" -or \
     -name "*.json~" -or \
     -name "*.jst" -or \
+    -name "*.kt" -or \
+    -name "*.l" -or \
+    -name "*.lcov" -or \
     -name "*.lib" -or \
     -name "*.log" -or \
     -name "*.Makefile" -or \
     -name "*.map" -or \
     -name "*.markdown" -or \
     -name "*.md" -or \
+    -name "*.mdown" -or \
+    -name "*.mf" -or \
+    -name "*.mjs" -or \
     -name "*.mkd" -or \
+    -name "*.nib" -or \
     -name "*.node.mk" -or \
+    -name "*.nojekyll" -or \
     -name "*.nuspec" -or \
+    -name "*.nycrc" -or \
     -name "*.o.d" -or \
     -name "*.obj" -or \
     -name "*.orig" -or \
     -name "*.patch" -or \
     -name "*.pdb" -or \
+    -name "*.pegjs" -or \
+    -name "*.php" -or \
     -name "*.pl" -or \
+    -name "*.plist" -or \
+    -name "*.PNG" -or \
     -name "*.png" -or \
     -name "*.ps1" -or \
     -name "*.py" -or \
     -name "*.pyc" -or \
     -name "*.rb" -or \
     -name "*.rej" -or \
+    -name "*.remarkrc" -or \
+    -name "*.rs" -or \
     -name "*.rtf" -or \
     -name "*.S" -or \
     -name "*.s" -or \
+    -name "*.scala" -or \
     -name "*.sln" -or \
+    -name "*.swift" -or \
     -name "*.swp" -or \
     -name "*.target.mk" -or \
     -name "*.tgz" -or \
     -name "*.tlog" -or \
+    -name "*.tm_properties" -or \
     -name "*.todo" -or \
+    -name "*.ts-jest-digest" -or \
     -name "*.ttf" -or \
     -name "*.txt" -or \
     -name "*.vcxproj.filters" -or \
     -name "*.vcxproj" -or \
     -name "*.watchr" -or \
+    -name "*.webidl" -or \
+    -name "*.whitelist" -or \
     -name "*.woff" -or \
+    -name "*.zsh" -or \
     -name "*~" -or \
     -name "*benchmark*" -or \
     -name "*LICENCE*" -or \
