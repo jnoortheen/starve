@@ -150,6 +150,7 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name "*.pyc" -or \
     -name "*.rb" -or \
     -name "*.rej" -or \
+    -name "*.rtf" -or \
     -name "*.S" -or \
     -name "*.s" -or \
     -name "*.sln" -or \
