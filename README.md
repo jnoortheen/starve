@@ -32,3 +32,12 @@ from `node_modules`, such as markdown, typescript source files, licenses etc.
 ```bash
 npx starve
 ```
+
+## How we decide what files to remove
+
+We are running this command periodically to see unique file extension in
+`node_modules`, try removing **unnecessary** files and test each attempt.
+
+```bash
+find node_modules -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
+```

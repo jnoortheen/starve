@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/93v/starve/issues"
   },
-  "homepage": "https://github.com/93v/starve#readme"
+  "homepage": "https://github.com/93v/starve#readme",
+  "files": [
+    "starve.sh"
+  ]
 }
