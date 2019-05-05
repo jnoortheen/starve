@@ -194,7 +194,6 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name "*.tlog" -or \
     -name "*.tm_properties" -or \
     -name "*.todo" -or \
-    -name "*.ts-jest-digest" -or \
     -name "*.ttf" -or \
     -name "*.txt" -or \
     -name "*.vcxproj.filters" -or \
