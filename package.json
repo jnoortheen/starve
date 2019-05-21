@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
+    "lint": "echo \"Error: no lint specified\"",
+    "build": "echo \"Error: no build specified\"",
     "postversion": "git push && git push --tags"
   },
   "bin": {
