@@ -1,7 +1,7 @@
 # Starve
 
 ![CircleCI](https://img.shields.io/circleci/build/github/93v/starve.svg)
-![David](https://img.shields.io/david/dev/93v/starve.svg)
+![David](https://img.shields.io/david/93v/starve.svg)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/93v/starve.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/93v/starve.svg)
 ![npm](https://img.shields.io/npm/dw/starve.svg)
